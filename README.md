@@ -224,7 +224,7 @@ python main.py
 
 Due to the imbalanced nature of the dataset, with 22.1% of images containing ships and 77.9% without, a strategic approach to data sampling was required to train the model effectively.
 
-![Dataset Imbalance](https://github.com/Taras-Zelenyy/Intern-Data-Science-Task-/assets/83030264/094dbded-a020-48be-8cbc-0cd34a35a772)
+![image](https://github.com/Taras-Zelenyy/Intern-Data-Scientist-Task/assets/83030264/be100998-5912-4bab-90c2-d21f1af8cdb6)
 
 *Distribution of images in the dataset with and without ships*
 
@@ -312,30 +312,30 @@ Users can load the trained model from this directory to perform inference on new
 The work undertaken has culminated in the development of a model capable of detecting ships within images and generating corresponding masks for each vessel. The model performs admirably on images where ships are distinct and visible against the background. However, challenges arise with images that are heavily cluttered, such as busy port areas, or those with obstructive weather conditions like dense fog. Additionally, in scenarios where even the human eye might struggle to discern a ship, the model may not delineate the ship's form with high precision. In some cases, rather than producing exact rectangular masks, the model tends to create outlines that more closely resemble ovals, albeit still accurately indicating the location of the ships. Several examples of the model's testing outcomes will be provided to demonstrate its capabilities and limitations in various conditions. **All the data to demonstrate the model's operation was selected randomly**
 
 
-![image](https://github.com/Taras-Zelenyy/Intern-Data-Science-Task-/assets/83030264/d109361d-59d3-494b-a457-0f71d9264e88)
+![image](https://github.com/Taras-Zelenyy/Intern-Data-Scientist-Task/assets/83030264/bc1c5703-e0b4-4916-abb4-87a4d3f0ac83)
 
 *The image has clear visibility and the model has successfully generated a mask. However, the outline of the vessel shape is not perfect, but it accurately reflects the location of the vessel, but not its exact outline*
 
-![image](https://github.com/Taras-Zelenyy/Intern-Data-Science-Task-/assets/83030264/8390398a-69c1-4f43-b980-a09ced3d8440)
+![image](https://github.com/Taras-Zelenyy/Intern-Data-Scientist-Task/assets/83030264/8f6ebe41-0a56-49ab-bfee-c0e556048d18)
 
 *The image has clear visibility and the model has successfully generated a mask. However, the outline of the vessel shape is not perfect, but it accurately reflects the location of the vessel, but not its exact outline*
 
-![image](https://github.com/Taras-Zelenyy/Intern-Data-Science-Task-/assets/83030264/30770a00-ebf5-48d2-851f-c4837e54249f)
+![image](https://github.com/Taras-Zelenyy/Intern-Data-Scientist-Task/assets/83030264/997d03a8-ade3-419c-a93d-17e900e0a348)
 
 *The model was able to see all the ships well, but there are some problem areas*
 
-![image](https://github.com/Taras-Zelenyy/Intern-Data-Science-Task-/assets/83030264/476a47c5-e137-4314-bbb6-68c5c841bc20)
+![image](https://github.com/Taras-Zelenyy/Intern-Data-Scientist-Task/assets/83030264/814f68d2-ccaf-44f3-8018-b48e52d53c0d)
 
 *The model saw a ship, but some of the waves were mistaken for a ship*
 
-![image](https://github.com/Taras-Zelenyy/Intern-Data-Science-Task-/assets/83030264/4a16aaef-bd20-4816-a9ac-dc95d2b44639)
+![image](https://github.com/Taras-Zelenyy/Intern-Data-Scientist-Task/assets/83030264/cb14acbc-f93b-415e-aa28-5302f199a8be)
 
 *Due to the high density of clouds or fog, the model could not see the ships*
 
-![image](https://github.com/Taras-Zelenyy/Intern-Data-Science-Task-/assets/83030264/63e81d33-b2b6-45bc-9adb-4babeb1baf64)
+![image](https://github.com/Taras-Zelenyy/Intern-Data-Scientist-Task/assets/83030264/63038936-de9f-4fd7-a9f3-c0b82ec4ce29)
 
 *The model worked well and did not find any ships in the cloudy sky, so the mask is empty*
 
-![image](https://github.com/Taras-Zelenyy/Intern-Data-Science-Task-/assets/83030264/0fe12b49-5cd6-4ffd-b992-531d1db4560e)
+![image](https://github.com/Taras-Zelenyy/Intern-Data-Scientist-Task/assets/83030264/0cae7338-7fe1-401a-9a19-fb54a5b7e23d)
 
 *In a dense port area, the model could not see moored ships*
